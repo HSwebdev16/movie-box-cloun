@@ -1,0 +1,296 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background:linear-gradient(to left,rgb(65, 63, 63),black);
+    color: white;
+}
+
+.navbar{
+
+    display: flex;
+   height: 55px;
+   align-items: center;
+   background-color:transparent;
+   justify-content: space-around;
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  
+}
+
+
+#logo{
+    height: 40px;
+    position: relative;left: 10px;
+
+   
+
+}
+#logoh1{
+    font-size: 30px;
+    position: relative;
+    right: 110px;
+    font-family:system-ui, sans-serif;
+    font-weight: bolder;
+}
+#search{
+    width: 30%;
+    position: relative;
+    right: 190px;
+    border: 1px solid transparent;
+      background: none;
+    border-color: transparent;
+    background-color: rgba(125, 108, 108,0.4);
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    font-size: large;
+}
+#btn1{
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(255, 247, 159);
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 8%;
+    font-size: small;
+    position: relative;
+    left: 150px;
+}
+#btn2{
+    border: none;
+    border-radius: 15px;
+    background: var(--Brand-NewBrand_gradient, linear-gradient(91deg, #1cb7ff 1.22%, #2ff58b 50.24%));
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 8%;
+    font-size:small;
+    position: relative;
+    left: 75px;
+}
+#btn3{
+    align-items: center;
+    background: var(--passport-entry-bg, hsla(0, 0%, 100%, .3));
+    border-radius: 15px;
+    display: flex;
+    gap: .25rem;
+    height:30px;
+    padding: .125rem .75rem;
+   
+}
+
+.slider{
+  position: relative;
+  height: 70vh;
+  
+   border-left: 2px solid transparent;
+   border-radius: 2px;
+  margin-left: 10px;
+}
+
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+  animation: fade 30s infinite both;
+}
+
+.s1 {
+     background-image: url("img\ folder/bg.webp");
+     animation-delay: 0s;
+    
+     }
+.s2 {
+     background-image: url("img\ folder/bg2.webp");
+    animation-delay: 5s; 
+   
+     }
+.s3 {
+     background-image: url("img\ folder/bg3.webp");
+     animation-delay: 10s;
+    }
+.s4 {
+     background-image: url("img\ folder/bg4.webp");
+      animation-delay: 15s; 
+     }
+.s5 {
+     background-image: url("img\ folder/bg5.jpg");
+      animation-delay: 20s;
+     }
+.s6 {
+     background-image: url("img\ folder/bg5.webp");
+      animation-delay: 25s; 
+     }
+
+@keyframes fade {
+  0%      { opacity: 0; }
+  3%      { opacity: 1; }
+  16.66%  { opacity: 1; }
+  20%     { opacity: 0; }
+  100%    { opacity: 0; }
+}
+
+
+#info {
+     position: absolute;
+     left: 28px;
+      bottom: 40px;
+      
+     
+     
+    
+     }
+
+#info h1 {
+     margin: 0 0 4px;
+      font-size: 35px;
+     }
+
+#info2 {
+     font-size: 25px;
+      color:white;
+     }
+  
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.5);
+  background: rgba(0,0,0,.55);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+.prev {
+     left: 12px;
+     }
+.next {
+     right: 12px; 
+    }
+
+    #movie{
+       height: 200px;
+       display: flex;
+         position: relative;
+        gap: 15px;
+        margin: 10px;
+        margin-bottom: 150px;
+    }
+    #movie div{
+        height: 270px;
+        width: 210px;
+        border-radius: 10px;
+        border: 2px ridge rgb(75, 73, 73);
+        
+
+    }
+    #movie:hover div{
+        transform: rotateX(5deg) rotateY(5deg) scale(1.05);
+    
+    }
+
+    #img1{
+         background-image: url(https://pbcdn.aoneroom.com/image/2026/06/05/ea2e39e7a5570852a19652d63d073a3b.jpg?x-oss-process=image/resize%2Cw_250);
+         background-repeat: no-repeat;
+         background-color: #ffffff0f;
+    }
+#img1 p{
+    position: relative;
+    top: 250px;
+    left: 10px;
+}
+ #img2{
+         background-image: url(https://pbcdn.aoneroom.com/image/2026/06/03/a33d8c8e331b483d6e8c063c9d07dbe6.jpg?x-oss-process=image/resize%2Cw_250);
+         background-repeat: no-repeat;
+         background-color: #ffffff0f;
+    }
+#img2 p{
+    position: relative;
+    top: 250px;
+    left: 10px;
+}
+ #img3{
+         background-image: url(https://pbcdn.aoneroom.com/image/2026/06/03/9e4b63f03d14f654a4104e27b57fb442.jpg?x-oss-process=image/resize%2Cw_250);
+         background-repeat: no-repeat;
+         background-color: #ffffff0f;
+    }
+#img3 p{
+    position: relative;
+    top: 250px;
+    left: 10px;
+}
+ #img4{
+         background-image: url(https://pbcdn.aoneroom.com/image/2026/06/03/849da0d776e59043976b08909cc94afc.jpg?x-oss-process=image/resize%2Cw_250);
+         background-repeat: no-repeat;
+         background-color: #ffffff0f;
+    }
+#img4 p{
+    position: relative;
+    top: 250px;
+    left: 10px;
+}
+ #img5{
+         background-image: url(https://pbcdn.aoneroom.com/image/2026/06/05/d7d563cd83478cb48efe37c04d1f6e6e.jpg?x-oss-process=image/resize%2Cw_250);
+         background-repeat: no-repeat;
+         background-color: #ffffff0f;
+    }
+#img5 p{
+    position: relative;
+    top: 250px;
+    left: 10px;
+}
+ #img6{
+         background-image: url(https://pbcdn.aoneroom.com/image/2026/06/03/6d90770bb9b7197e76d956989d704aac.jpg?x-oss-process=image/resize%2Cw_250);
+         background-repeat: no-repeat;
+         background-color: #ffffff0f;
+    }
+#img6 p{
+    position: relative;
+    top: 250px;
+    left: 10px;
+}
+ #img7{
+         background-image: url(https://pbcdn.aoneroom.com/image/2026/06/03/7688644990e52a768358c46139027b88.jpg?x-oss-process=image/resize%2Cw_250);
+         background-repeat: no-repeat;
+         background-color: #ffffff0f;
+    }
+#img7 p{
+    position: relative;
+    top: 250px;
+    left: 10px;
+}
+ #img8{
+         background-image: url(https://pbcdn.aoneroom.com/image/2026/06/03/8e857debcf35a3bdff43bd5be2321987.jpg?x-oss-process=image/resize%2Cw_250);
+         background-repeat: no-repeat;
+         background-color: #ffffff0f;
+    }
+#img8 p{
+    position: relative;
+    top: 250px;
+    left: 10px;
+}
+
+footer{
+    font-size: x-small;
+    margin-left: 10px;
+}
+footer div{
+    background-color: #ffffff1a;
+    height: 1px;
+}
